@@ -1,0 +1,93 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #DAC8E8;
+    margin: 0;
+}
+
+#header {
+    height: 120px;
+}
+
+#header_title {
+    font-family: 'Noto Sans';
+    font-size: 40px;
+    font-weight: bold;
+    color: #DAC8E8;
+    -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgb(32, 32, 32);
+    text-shadow: 10px 10px 7px rgb(119, 119, 119);
+    text-align: center;
+    flex-direction: column;
+    padding: 42px 0 30px 0;
+}
+
+#add_box::placeholder {
+    color: rgb(172, 172, 172);
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_box {
+    background-color: #F6EDFE;
+    height: 550px;
+    width: 450px;
+    border-radius: 30px;
+}
+
+#main_title {
+    margin: 10px auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#add_box {
+    margin-left: 40px;
+    margin-right: 25px;
+    width: 300px;
+    height: 35px;
+    background-color: #F6EDFE;
+    border: 3px solid #DAC8E8;
+    outline: none;
+    border-radius: 7px;
+    padding-left: 12px;
+    box-shadow: inset 5px 5px 0 0 #C8B3DB; /* 안쪽에 그림자 넣기. */ 
+}
+
+#submit_img {
+    transform: rotate(225deg);
+    width: 35px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#add_list {
+    padding: 10px 40px;
+    height: 375px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #C8B3DB;
+    padding: 1px;
+    cursor: pointer;
+}
+
+input[id="check"]:checked + label {
+    background-color:  #C8B3DB;
+    width: 9px;
+    height: 9px;
+    padding: 2px;
+    background-clip: content-box;
+}
