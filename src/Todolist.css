@@ -91,3 +91,7 @@ input[id="check"]:checked + label {
     padding: 2px;
     background-clip: content-box;
 }
+
+#text_bar {
+    width: 400px;
+}
