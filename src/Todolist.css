@@ -71,6 +71,12 @@ body {
     height: 375px;
 }
 
+#content {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
 input[type="checkbox"] {
     display: none;
 }
@@ -92,6 +98,36 @@ input[id="check"]:checked + label {
     background-clip: content-box;
 }
 
-#text_bar {
-    width: 400px;
+hr {
+    margin-left: 37px;
+    width: 330px;
+    border: solid 1.5px #DAC8E8;
+}
+
+#edit_img {
+    margin: auto 8px;
+    opacity: 0.5;
+    width: 17px;
+    height: 17px;
+}
+
+#delete_img {
+    margin: 0 0 0 8px;
+    opacity: 0.5;
+    width: 16px;
+    height: 16px;
+}
+
+#add_text {
+    margin-top: -3px;
+    margin-left: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.65;
+}
+
+span {
+    align-items: center;
+    display: inline-flex;
 }
