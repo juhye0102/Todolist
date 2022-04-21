@@ -10,7 +10,7 @@ const inputText = () => {
 
     content.innerHTML=`
     <span>
-      <input id="check" type="checkbox">
+      <input id="check" type="checkbox" readonly>
       <label for="check"></label>
     <div id="add_text">${input_text.value}</div>
     </span>
