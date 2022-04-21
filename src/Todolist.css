@@ -90,7 +90,7 @@ input[type="checkbox"] + label {
     cursor: pointer;
 }
 
-input[id="check"]:checked + label {
+input[class="check"]:checked + label {
     background-color:  #C8B3DB;
     width: 9px;
     height: 9px;
