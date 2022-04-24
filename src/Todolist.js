@@ -28,9 +28,17 @@ const inputText = () => {
 
 button.addEventListener('click', inputText);
 
+function delete_text() {
+  const currentVal = input_text.value;
+  input_text.value ='';
+}
+
+button.onclick = delete_text;
+
 input_text.addEventListener('keydown', (event) => {
   if (event.keyCode === 13) { 
     inputText();
+    input_text.value ='';
   }
 }); 
 
