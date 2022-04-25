@@ -109,6 +109,7 @@ hr {
     opacity: 0.5;
     width: 17px;
     height: 17px;
+    cursor: pointer;
 }
 
 #delete_img {
@@ -116,6 +117,7 @@ hr {
     opacity: 0.5;
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 #add_text {
