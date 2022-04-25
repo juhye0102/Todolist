@@ -7,7 +7,8 @@ let count = 0;
 const inputText = () => {
     // console.log(input.value);
     const content = document.createElement('div');
-    content.id="content";
+    content.className="content";
+    content.id=`content${count}`;
 
     content.innerHTML=`
     <span>
@@ -16,14 +17,19 @@ const inputText = () => {
     <div id="add_text">${input_text.value}</div>
     </span>
     <div>
-      <img id="edit_img" src="/assets/img/free-icon-edit-button-84380.png">
-      <img id="delete_img" src="/assets/img/cancel-button.png">
+      <img id="delete_img" onclick="delete_button(${count})" src="/assets/img/cancel-button.png">
     </div>`
+ 
+    
+    
+    const hr=document.createElement('hr')
+    hr.id=`hr${count}`
     
     count++;
-
+    
     list.appendChild(content);
-    list.appendChild(document.createElement('hr'));
+    list.appendChild(hr);
+
   }
 
 button.addEventListener('click', inputText);
@@ -42,3 +48,11 @@ input_text.addEventListener('keydown', (event) => {
   }
 }); 
 
+
+const delete_button = (id) => {
+  const node = list.querySelector(`#content${id}`);
+  const hr = list.querySelector(`#hr${id}`);
+
+  node.remove()
+  hr.remove()
+}
