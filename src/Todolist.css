@@ -71,7 +71,7 @@ body {
     height: 375px;
 }
 
-#content {
+.content {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
