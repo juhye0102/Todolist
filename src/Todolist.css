@@ -1,135 +1,138 @@
 body {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: #DAC8E8;
-    margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #dac8e8;
+  margin: 0;
 }
 
 #header {
-    height: 120px;
+  height: 120px;
 }
 
 #header_title {
-    font-family: 'Noto Sans';
-    font-size: 40px;
-    font-weight: bold;
-    color: #DAC8E8;
-    -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: rgb(32, 32, 32);
-    text-shadow: 10px 10px 7px rgb(119, 119, 119);
-    text-align: center;
-    flex-direction: column;
-    padding: 42px 0 30px 0;
+  font-family: "Noto Sans";
+  font-size: 40px;
+  font-weight: bold;
+  color: #dac8e8;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(32, 32, 32);
+  text-shadow: 10px 10px 7px rgb(119, 119, 119);
+  text-align: center;
+  flex-direction: column;
+  padding: 42px 0 30px 0;
 }
 
 #add_box::placeholder {
-    color: rgb(172, 172, 172);
+  color: rgb(172, 172, 172);
 }
 
 .main {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main_box {
-    background-color: #F6EDFE;
-    height: 550px;
-    width: 450px;
-    border-radius: 30px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #f6edfe;
+  height: 550px;
+  width: 450px;
+  border-radius: 30px;
 }
 
 #main_title {
-    margin: 10px auto;
-    height: 100px;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #add_box {
-    margin-left: 40px;
-    margin-right: 25px;
-    width: 300px;
-    height: 35px;
-    background-color: #F6EDFE;
-    border: 3px solid #DAC8E8;
-    outline: none;
-    border-radius: 7px;
-    padding-left: 12px;
-    box-shadow: inset 5px 5px 0 0 #C8B3DB; /* 안쪽에 그림자 넣기. */ 
+  width: 300px;
+  height: 35px;
+  background-color: #f6edfe;
+  border: 3px solid #dac8e8;
+  outline: none;
+  border-radius: 7px;
+  padding-left: 12px;
+  box-shadow: inset 5px 5px 0 0 #c8b3db; /* 안쪽에 그림자 넣기. */
 }
 
 #submit_img {
-    transform: rotate(225deg);
-    width: 35px;
-    height: 40px;
-    cursor: pointer;
+  transform: rotate(225deg);
+  width: 35px;
+  height: 40px;
+  cursor: pointer;
 }
 
 #add_list {
-    padding: 10px 40px;
-    height: 375px;
+  height: 400px;
+  margin-top: 40px;
+  overflow: auto;
+  flex-direction: column;
+  display: flex;
 }
 
 .content {
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
 input[type="checkbox"] + label {
-    display: inline-block;
-    width: 11px;
-    height: 11px;
-    border: 2px solid #C8B3DB;
-    padding: 1px;
-    cursor: pointer;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #c8b3db;
+  padding: 1px;
+  cursor: pointer;
 }
 
 input[class="check"]:checked + label {
-    background-color:  #C8B3DB;
-    width: 9px;
-    height: 9px;
-    padding: 2px;
-    background-clip: content-box;
+  background-color: #c8b3db;
+  width: 9px;
+  height: 9px;
+  padding: 2px;
+  background-clip: content-box;
 }
 
 hr {
-    margin-left: 37px;
-    width: 330px;
-    border: solid 1.5px #DAC8E8;
+  margin-left: 37px;
+  width: 330px;
+  border: solid 1.5px #dac8e8;
 }
 
 #edit_img {
-    margin: auto 8px;
-    opacity: 0.5;
-    width: 17px;
-    height: 17px;
-    cursor: pointer;
+  margin: auto 8px;
+  opacity: 0.5;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
 }
 
 #delete_img {
-    margin: 0 0 0 8px;
-    opacity: 0.5;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
+  margin: 0 0 0 8px;
+  opacity: 0.5;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
 
 #add_text {
-    margin-top: -3px;
-    margin-left: 35px;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    opacity: 0.65;
+  margin-top: -3px;
+  margin-left: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  opacity: 0.65;
 }
 
 span {
-    align-items: center;
-    display: inline-flex;
+  align-items: center;
+  display: inline-flex;
 }
